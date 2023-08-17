@@ -1,0 +1,21 @@
+version: 0.1
+component: build
+timeoutInSeconds: 6000
+shell: bash
+
+steps:
+  - type: Command
+    name: "Building docker image"
+    command: |
+      docker build -t mywebserver:v1 .
+
+outputArtifacts:
+  - name: mywebserver_docker
+    type: DOCKER_IMAGE
+    location: mywebserver:v1
+  - name: mywebserver_yaml
+    type: BINARY
+    location: mywebserver.yaml
+  - name: mywebserver_svc_yaml
+    type: BINARY
+    location: mywebserver_svc.yaml

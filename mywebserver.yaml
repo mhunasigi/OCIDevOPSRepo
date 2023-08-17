@@ -17,3 +17,5 @@ spec:
       containers:
       - image: yyz.ocir.io/yzukikevdw6w/mywebserver:v1
       name: mywebserver
+      imagePullSecrets:
+      - name: ocirsecret

@@ -15,5 +15,5 @@ spec:
         app: mywebserver
     spec:
       containers:
-      - image: yyz.ocir.io/yzukikevdw6w/devopscontainerrepo/mywebserver:v1
+        - image: yyz.ocir.io/yzukikevdw6w/devopscontainerrepo:v1
         name: mywebserver

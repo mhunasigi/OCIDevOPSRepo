@@ -2,20 +2,20 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: mywebserver
-  name: mywebserver
+    app: webserver
+  name: webserver
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mywebserver
+      app: webserver
   template:
     metadata:
       labels:
-        app: mywebserver
+        app: webserver
     spec:
       containers:
       - image: yyz.ocir.io/yzukikevdw6w/mywebserver:v1
-        name: mywebserver
+        name: webserver
       imagePullSecrets:
       - name: ocirsecret

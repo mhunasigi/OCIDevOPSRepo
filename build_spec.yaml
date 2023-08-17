@@ -10,7 +10,7 @@ steps:
       docker build -t mywebserver:v1 .
 
 outputArtifacts:
-  - name: mywebserver
+  - name: mywebserver_docker
     type: DOCKER_IMAGE
     location: mywebserver:v1
   - name: mywebserver_yaml

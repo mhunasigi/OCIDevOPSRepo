@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: mywebserver
+  name: mywebserver
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: mywebserver
+  template:
+    metadata:
+      labels:
+        app: mywebserver
+    spec:
+      containers:
+      - image: yyz.ocir.io/yzukikevdw6w/devopscontainerrepo/mywebserver:v1
+        name: mywebserver

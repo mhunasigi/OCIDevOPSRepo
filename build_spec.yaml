@@ -13,3 +13,6 @@ outputArtifacts:
   - name: mywebserver
     type: DOCKER_IMAGE
     location: mywebserver:v1
+  - name: mywebserver_yaml
+    type: BINARY
+    location: mywebserver.yaml

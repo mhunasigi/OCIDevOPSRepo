@@ -16,3 +16,6 @@ outputArtifacts:
   - name: mywebserver_yaml
     type: BINARY
     location: mywebserver.yaml
+  - name: mywebserver_svc_yaml
+    type: BINARY
+    location: mywebserver_svc.yaml

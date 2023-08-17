@@ -5,7 +5,7 @@ metadata:
     app: mywebserver
   name: mywebserver
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: mywebserver
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - image: yyz.ocir.io/yzukikevdw6w/mywebserver:v1
-      name: mywebserver
+        name: mywebserver
       imagePullSecrets:
       - name: ocirsecret
